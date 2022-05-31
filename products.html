@@ -14,36 +14,23 @@
     <link rel="stylesheet" href="assets/css/tooplate-main.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="shortcut icon" href="assets/images/header-logo.jpg">
-  </head>
-  <body>
-    
-    <script>
-      var resultado = window.confirm('Bienvenido a pixie, estas listo para vivir esta gran experiencia');
-    </script>
-       <a class="botonestilo" href="#" role="button" id="boton">Calcula el envio a tu ciudad</a>
-    <script>
-      var boton = document.getElementById("boton");
-      boton.onclick = function(e) {
-      var usuario = prompt("A cuantos km de Buenos Aires estas ??");
-      var km = parseInt(usuario);
-      var kms = 1.3;
-      var dias = 0.01;
-      var km_final, dias_final;
-      km_final = km * kms;
-      dias_final = km * dias;
-      dias_final = parseInt (dias_final)
-      km_final = parseInt(km_final);
-      window.alert (`Tu costo de envio es de ${ km_final}$ y llegara en ${dias_final} días`) ;          
-      }
-  </script>
   
-    <!-- boton arriba-->
-    <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+    <script>
+      (window.confirm ("Te gustaria recibir nuestras ofertas ??")) 
+      (window.prompt ("Dejanos tu correo electronico y recibi las novedades"))
+      (prompt ("Dejanos tu correo electronico y recibi las novedades"))
+      </script>
+  </head>
+
+  <body>
+     <!-- Ir Hacia Arriba-->
+     <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
       <span class="fa-stack">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
       </span>
     </a>
+
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
@@ -53,13 +40,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Inicio
+              <a class="nav-link" href="products.html">Productos
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">Sobre Nosotros</a>
@@ -71,117 +58,142 @@
         </div>
       </div>
     </nav>
-    <!-- Banner -->
-    <div class="banner">
+
+    <!-- Page Content -->
+    <!-- Items Starts Here -->
+    <div class="featured-page">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="caption">
-              <h2 style="color: rgb(21, 123, 219);" > <strong style="color:rgb(8, 44, 101);"> PIXIE </strong> TIENDA ONLINE</h2>
+          <div class="col-md-4 col-sm-12">
+            <div class="section-heading">
               <div class="line-dec"></div>
-              <p>Somos Pixie tienda oficial nike argentina y nuestro <strong> proposito en el mundo </strong> es que tengas la mejor experiencia comprando Online desde cualquier parte del mundo ..
-              <p> Ve y cuentale a tus amigues sobre nosotros </p><p> Si recomiendas nuestra pagina gana un 15% para vos y tu invitado</p>
-              <div class="main-button">
-                <a href= "products.html">Comenza tu experiencia Pixie</a>
-              </div>
+              <h1>Nuestros productos</h1>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div id="filters" class="button-group">
+              <button class="btn btn-primary" data-filter="*">Todos Los Products</button>
+              <button class="btn btn-primary" data-filter=".new">Lo Nuevo</button>
+              <button class="btn btn-primary" data-filter=".low">Menor Precio</button>
+              <button class="btn btn-primary" data-filter=".high">Mayor Precio</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Fin Banner -->
+  
+    <div class="featured container no-gutter">
 
-    <!-- Featured  -->
-    <div class="featured-items">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <div class="line-dec"></div>
-              <h1>Lo más vendido este mes</h1>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="owl-carousel owl-theme">
+        <div class="row posts">
+            <div id="1" class="item new col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img src="assets/images/item-01.jpg" alt="Item 1">
+                  <img height="222px" width="222px" src="assets/images/product-01.jpg" alt="">
                   <h4>Catalyist001</h4>
                   <h6>$1500</h6>
                 </div>
               </a>
+            </div>
+            <div id="2" class="item high col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-02.jpg" alt="Item 2">
+                  <img height="222px" width="222px" src="assets/images/product-02.jpg" alt="">
                   <h4>Catalyist002</h4>
                   <h6>$2500</h6>
                 </div>
               </a>
+            </div>
+            <div id="3" class="item low col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-03.jpg" alt="Item 3">
+                  <img height="222px" width="222px" src="assets/images/product-03.jpg" alt="">
                   <h4>Catalyist003</h4>
                   <h6>$3500</h6>
                 </div>
               </a>
+            </div>
+            <div id="4" class="item low col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-04.jpg" alt="Item 4">
+                  <img height="222px" width="222px" src="assets/images/product-04.jpg" alt="">
                   <h4>Catalyist004</h4>
                   <h6>$4500</h6>
                 </div>
               </a>
+            </div>
+            <div id="5" class="item new high col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-05.jpg" alt="Item 5">
+                  <img height="222px" width="222px" src="assets/images/product-05.jpg" alt="">
                   <h4>Catalyist005</h4>
                   <h6>$5500</h6>
                 </div>
               </a>
+            </div>
+            <div id="6" class="item new col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-06.jpg" alt="Item 6">
+                  <img height="222px" width="222px" src="assets/images/product-06.jpg" alt="">
                   <h4>Catalyist006</h4>
                   <h6>$6500</h6>
                 </div>
               </a>
+            </div>
+            <div id="7" class="item new high col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-07.jpg" alt="Item 7">
+                  <img height="222px" width="222px" src="assets/images/product-07.jpg" alt="">
                   <h4>Catalyist007</h4>
                   <h6>$7500</h6>
                 </div>
               </a>
+            </div>
+            <div id="8" class="item low new col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-08.jpg" alt="Item 8">
+                  <img height="222px" width="222px" src="assets/images/product-08.jpg" alt="">
                   <h4>Catalyist008</h4>
                   <h6>$8500</h6>
                 </div>
               </a>
+            </div>
+            <div id="9" class="item new col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img height="222px" width="222px" src="assets/images/item-09.jpg" alt="Item 9">
+                  <img height="222px" width="222px" src="assets/images/product-09.jpg" alt="">
                   <h4>Catalyist009</h4>
                   <h6>$9500</h6>
                 </div>
               </a>
             </div>
+        </div>
+    </div>
+
+    <div class="page-navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li class="current-page"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- Featred -->
+    <!-- Featred Page Ends Here -->
 
 
-    <!-- Subscribite -->
+    <!-- Subscribe Form Starts Here -->
     <div class="subscribe-form">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
               <div class="line-dec"></div>
-              <h1 style="font-family:'Trebuchet MS', sans-serif;" >NECESITAS AYUDA ?? </h1>
+              <h1 style="font-family:'Trebuchet MS', sans-serif;" >NECESITAS AYUDA ? </h1>
             </div>
           </div>
           <div class="col-md-8 offset-md-2">
@@ -221,7 +233,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="logo">
-              <img src="assets/images/pixie.png " alt="">
+              <img src="assets/images/pixie.png" alt="">
             </div>
           </div>
           <div class="col-md-12">
@@ -259,6 +271,7 @@
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
+    <script src="assets/js/isotope.js"></script>
 
 
     <script language = "text/Javascript"> 
