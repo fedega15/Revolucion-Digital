@@ -16,9 +16,13 @@
     <link rel="shortcut icon" href="assets/images/header-logo.jpg">
   
     <script>
-      (window.confirm ("Te gustaria recibir nuestras ofertas ??")) 
-      (window.prompt ("Dejanos tu correo electronico y recibi las novedades"))
-      (prompt ("Dejanos tu correo electronico y recibi las novedades"))
+    mensaje = (confirm("Te gustaria recibir nuestras ofertas ??")) 
+    if(mensaje == "null" || mensaje == null || mensaje == "");
+      else if ( correo = window.prompt ("Dejanos tu correo electronico y recibi las novedades")); 
+
+    if (correo == "null" || mensaje == null || mensaje == ""); 
+    
+      else (alert("Listo!! Te enviaremos las novedades PIXIE"));
       </script>
   </head>
 
