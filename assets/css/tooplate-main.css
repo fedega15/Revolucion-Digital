@@ -134,11 +134,11 @@ a {
 }
 /* Banner Style */
 .banner {
-	margin-top: 50px;
+	margin-top: 60px;
 	background-image: url(../images/1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 	50px 0px;
+	padding: 	40px ;
 	background-position: center center;
 }
 .banner .caption {
