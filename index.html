@@ -16,9 +16,7 @@
     <link rel="shortcut icon" href="assets/images/header-logo.jpg">
   </head>
   <body> 
-    <script>
-      var resultado = window.confirm('Bienvenido a pixie, estas listo para vivir esta gran experiencia');
-    </script>
+    
     <!-- boton arriba-->
     <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
       <span class="fa-stack">
@@ -51,21 +49,7 @@
             </li>
             <li>
               <a class="nav-link" style="font-size: 15px;"  role="button" id="boton">Calcula el envio a tu ciudad</a>
-              <script>
-                var boton = document.getElementById("boton");
-                boton.onclick = function(e) {
-                var usuario = prompt("A cuantos km de Buenos Aires estas ??");
-                var km = parseInt(usuario);
-                var kms = 1.3;
-                var dias = 0.01;
-                var km_final, dias_final;
-                km_final = km * kms;
-                dias_final = km * dias;
-                dias_final = parseInt (dias_final)
-                km_final = parseInt(km_final);
-                window.alert (`Tu costo de envio es de ${ km_final}$ y llegara en ${dias_final} días`) ;          
-                }
-            </script>
+             
             
             </li>
           </ul>
@@ -272,8 +256,29 @@
           }
       }
     </script>
+        
+         <script>
+          var boton = document.getElementById("boton");
+          boton.onclick = function(e) {
+          var usuario = prompt("A cuantos km de Buenos Aires estas ??");
+          var km = parseInt(usuario);
+          var kms = 1.3;
+          var dias = 0.01;
+          var km_final, dias_final;
+          km_final = km * kms;
+          dias_final = km * dias;
+          dias_final = parseInt (dias_final)
+          km_final = parseInt(km_final);
+          window.alert (`Tu costo de envio es de ${ km_final}$ y llegara en ${dias_final} días`) ;          
+          }
+      </script>
 
+<script>
+  var resultado = window.confirm('Bienvenido a pixie, estas listo para vivir esta gran experiencia');
+</script>
 
   </body>
 
+
 </html>
+
